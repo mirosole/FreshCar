@@ -1,7 +1,7 @@
 const API_URL = "http://localhost:5064/api";
 
 // 📌 Создание карточек товара
-export function createCard(data, category, place) {
+export function createCard(data, category, place, skipCategoryCheck = false) {
     data.forEach(item => {
         const { id, name, description, imageUrls, price, stock, options } = item;
 
@@ -36,18 +36,16 @@ export function createCard(data, category, place) {
             </div>
         </div>`;
 
-        if (category === item.category) {
+        if (skipCategoryCheck || category === item.category) {
             place.insertAdjacentHTML('beforeend', cardHTML);
         }
     });
 
-    // 📌 Обработчик кнопок "DO KOŠÍKU"
     document.querySelectorAll(".add-to-cart").forEach(button => {
         button.addEventListener("click", () => addToCart(button.dataset.id));
     });
 }
 
-// 📌 Добавление в корзину и обновление карточки
 async function addToCart(productId) {
     console.log("✅ addToCart вызван для товара:", productId);
     try {
@@ -71,14 +69,12 @@ async function addToCart(productId) {
         const btn = document.querySelector(`.add-to-cart[data-id="${productId}"]`);
         const card = btn.closest(".catalog__item");
 
-        // 🔁 Обновление кнопки
         if (btn) {
             btn.textContent = "V KOŠÍKU";
             btn.classList.add("added");
             btn.disabled = true;
         }
 
-        // 🔁 Обновление количества на складе
         const quantityDiv = card.querySelector(`.quantity[data-quantity-for="${productId}"]`);
         if (quantityDiv) {
             let currentStock = parseInt(card.dataset.stock);
@@ -102,7 +98,6 @@ async function addToCart(productId) {
     }
 }
 
-// 📌 Генерация опций (цвета)
 function pushProductsOptions(o, id) {
     let options = [];
     getProductsOptions(o, options, id);

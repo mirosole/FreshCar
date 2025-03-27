@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/checkout.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main class="main">
+        <div class="container">
+            <div class="cart-nav">
+                <div class="cart-nav_cart active">
+                    <span>1</span>
+                    <h1>Košík</h1>
+                </div>
+                <div class="cart-nav_checkout active">
+                    <span>2</span>
+                    <h1>Doprava a platba</h1>
+                </div>
+                <div class="cart-nav_info">
+                    <span>3</span>
+                    <h1>Dodaćí údaje</h1>
+                </div>
+            </div>
+            <div class="main_inner">
+                <div class="main-delivery">
+                    <h1 class="main-delivery_title">Způsob dopravy</h1>
+                    <div id="delivery" class="main-delivery_block main-block">
+                        <div class="main-delivery_item">
+                            <div>
+                                <input type="radio" onclick="Packeta.Widget.pick(packetaApiKey, showSelectedPickupPoint, packetaOptions)">
+                                <img src="/img/zasilkovna.png">
+                                <h1>Zásilkovna – výdejna a Z-BOX</h1>
+                            </div>
+                            <p>49 Kč</p>
+                        </div>
+    
+                        <div class="main-delivery_item">
+                            <div>
+                                <input type="radio">
+                                <img src="/img/ppl-logo.jpg">
+                                <h1>PPL</h1>
+                            </div>
+                            <p>49 Kč</p>
+                        </div>
+    
+                        <div class="main-delivery_item">
+                            <div>
+                                <input type="radio">
+                                <img src="/img/dhl.png">
+                                <h1>DHL</h1>
+                            </div>
+                            <p>49 Kč</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="main-payment">
+                    <h1 class="main-payment_title">Způsob platby</h1>
+                    <div id="payment" class="main-payment_block main-block">
+                        <div class="main-payment_item">
+                            <div>
+                                <input type="radio">
+                                <p>Platba kartou</p>
+                            </div>
+                            <img src="/img/visa-and-mastercard-logo.png">
+                        </div>
+    
+                        <div class="main-payment_item">
+                            <div>
+                                <input type="radio">
+                                <p>Google Pay</p>
+                            </div>
+                            <img src="/img/google-pay-mark.png">
+                        </div>
+    
+                        <div class="main-payment_item">
+                            <div>
+                                <input type="radio">
+                                <p>Apple Pay</p>
+                            </div>
+                            <img src="/img/apple-pay-icon.png">
+                        </div>
+    
+                        <div class="main-payment_item">
+                            <div>
+                                <input type="radio">
+                                <p>Apple Pay</p>
+                            </div>
+                            <img src="/img/paypal-icon.png">
+                        </div>
+    
+                        <div class="main-payment_item burger">
+                            <div class="main-payment_item_header">
+                                <input id="main-payment_item-chevron" type="checkbox">
+                                <label for="main-payment_item-chevron"></label>
+                                <p>Online bankovní převody</p>
+                            </div>
+                            <div class="main-payment_item_images">
+                                <img src="/img/Ceska_Sporitelna.png">
+                                <img src="/img/Komerční_banka_logo.svg">
+                                <img src="/img/raiffeisen-bank.png">
+                                <img src="/img/Mbank-logo.jpg">
+                                <img src="/img/logo_investicka.jpg">
+                            </div>
+                            <ul class="main_payment_item_menu">
+                                <li class="main_payment_item_menu-item">
+                                    <div>
+                                        <input type="radio">
+                                        <p>Platba 24</p>
+                                    </div>
+                                    <img src="/img/Ceska_Sporitelna.png">
+                                </li>
+    
+                                <li class="main_payment_item_menu-item">
+                                    <div>
+                                        <input type="radio">
+                                        <p>MojePlatba</p>
+                                    </div>
+                                    <img src="/img/Komerční_banka_logo.svg">
+                                </li>
+    
+                                <li class="main_payment_item_menu-item">
+                                    <div>
+                                        <input type="radio">
+                                        <p>ePlatby</p>
+                                    </div>
+                                    <img src="/img/raiffeisen-bank.png">
+                                </li>
+    
+                                <li class="main_payment_item_menu-item">
+                                    <div>
+                                        <input type="radio">
+                                        <p>mTransfer</p>
+                                    </div>
+                                    <img src="/img/Mbank-logo.jpg">
+                                </li>
+    
+                                <li class="main_payment_item_menu-item">
+                                    <div>
+                                        <input type="radio">
+                                        <p>Fio banka</p>
+                                    </div>
+                                    <img src="/img/logo_investicka.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="checkout-btn">Pokračovat</button>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script type="module" src="/js/checkout.js"></script>
+    <script src="https://widget.packeta.com/v6/www/js/library.js"></script>
+    <script>
+      const packetaApiKey = 'XXX XXX XXX';
+      
+      const packetaOptions = {
+          language: "cs", 
+          valueFormat: "\"Packeta\",id,carrierId,carrierPickupPointId,name,city,street", 
+          view: "modal"
+      };
+      
+      function showSelectedPickupPoint(point) {
+          const saveElement = document.querySelector(".packeta-selector-value");
+
+          if(!saveElement)
+            return;
+          // Add here an action on pickup point selection
+          saveElement.innerText = '';
+          if (point) {
+            console.log("Selected point", point);
+            saveElement.innerText = "Address: " + point.formatedValue; 
+          }
+      }
+    </script>
+</body>
+</html>

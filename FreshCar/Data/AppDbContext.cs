@@ -14,6 +14,7 @@ namespace FreshCar.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
     }
 }
