@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css">
+</head>
+<body>
+<header id="header"></header>
+<main class="main">
+    <div class="container">
+        <div class="main_inner">
+            <section class="sidebar">
+                <ul class="sidebar_menu">
+                    <li class="sidebar_item">
+                        <a href="/html/account/profile.html">
+                            <img src="/img/profile.png">
+                            Osobní profil
+                        </a>
+                    </li>
+                    <li class="sidebar_item">
+                        <a href="/html/account/historyOrders.html">
+                            <img src="/img/list.png">
+                            Historie objednávek
+                        </a>
+                    </li>
+                    <li class="sidebar_item">
+                        <a href="/html/account/cartAccount.html">
+                            <img src="/img/cart-account.png">
+                            Košík
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content">
+                <div class="content-data">
+                    <div class="content-data_email">
+                        <h1>Email:</h1>
+                        <div class="content-data_email_block">
+                            <p id="user-email"></p>
+                        </div>
+                    </div>
+                    <button class="content-data_btn">Změnit heslo</button>
+                </div>
+
+                <div class="content-data-details">
+                    <h1 class="content-data-details_title">Fakturační údaje</h1>
+
+                    <!-- 📄 Режим просмотра -->
+                    <div id="billing-view" class="billing-display">
+                        <div class="billing-row"><strong>Jméno a příjmení:</strong> <span id="view-fullName"></span></div>
+                        <div class="billing-row"><strong>Ulice:</strong> <span id="view-street"></span></div>
+                        <div class="billing-row"><strong>PSČ:</strong> <span id="view-zip"></span></div>
+                        <div class="billing-row"><strong>Město:</strong> <span id="view-city"></span></div>
+                        <div class="billing-row"><strong>Telefonní číslo:</strong> <span id="view-phone"></span></div>
+                        <button id="edit-billing" class="content-data-details_btn">Upravit údaje</button>
+                    </div>
+
+
+                    <!-- ✏️ Режим редактирования -->
+                    <div id="billing-edit" style="display: none;">
+                        <div class="content-data-details_name">
+                            <h1>Jméno a přijmení</h1>
+                            <input type="text" id="input-fullName" />
+                        </div>
+                        <div class="content-data-details_street">
+                            <h1>Ulice</h1>
+                            <input type="text" id="input-street" />
+                        </div>
+                        <div class="content-data-details_adress-details">
+                            <div>
+                                <h1>PSČ</h1>
+                                <input type="number" id="input-zip" />
+                            </div>
+                            <div>
+                                <h1>Město</h1>
+                                <input type="text" id="input-city" />
+                            </div>
+                        </div>
+                        <div class="content-data-details_phone">
+                            <h1>Telefonní číslo</h1>
+                            <input type="tel" id="billing-phone" />
+                        </div>
+                        <button id="save-billing" class="content-data-details_btn">Uložit</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</main>
+<footer id="footer"></footer>
+<script type="module" src="/js/profile.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+
+</body>
+</html>

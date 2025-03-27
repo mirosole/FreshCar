@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík – FreshCar</title>
+    <link rel="stylesheet" href="/css/cartAccount.css">
+</head>
+<body>
+<header id="header"></header>
+
+<main class="main">
+    <div class="container">
+        <div class="main_inner">
+            <section class="sidebar">
+                <ul class="sidebar_menu">
+                    <li class="sidebar_item">
+                        <a href="/html/account/profile.html">
+                            <img src="/img/profile.png">
+                            Osobní profil
+                        </a>
+                    </li>
+                    <li class="sidebar_item">
+                        <a href="/html/account/historyOrders.html">
+                            <img src="/img/list.png">
+                            Historie objednávek
+                        </a>
+                    </li>
+                    <li class="sidebar_item">
+                        <a href="/html/account/cartAccount.html">
+                            <img src="/img/cart-account.png">
+                            Košík
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content">
+                <h1 class="content-title">Košík</h1>
+                <div class="content-block" id="cart-container">
+                    <!-- Товары загружаются из API -->
+                </div>
+                <button class="content_btn" id="checkout-button">Pokračovat</button>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer id="footer"></footer>
+<script type="module" src="/js/cartAccount.js"></script>
+</body>
+</html>

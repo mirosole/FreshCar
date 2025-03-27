@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Товары</title>
+    <link rel="stylesheet" href="/admin/css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+<div class="sidebar">
+    <h1>Admin panel</h1>
+    <ul class="sidebar_menu">
+        <li class="sidebar_item">
+            <a href="/admin/html/products.html">Товары</a>
+        </li>
+        <li class="sidebar_item">
+            <a href="/admin/html/orders.html">Заказы</a>
+        </li>
+        <li class="sidebar_item">
+            <a href="/admin/html/users.html">Пользователи</a>
+        </li>
+    </ul>
+</div>
+
+<main class="content">
+    <div class="scroll-table">
+        <table>
+            <thead>
+            <tr>
+                <td>Фото</td>
+                <td>ID</td>
+                <td>Название</td>
+                <td>Цена</td>
+                <td>Количество товара</td>
+                <td>Категория</td>
+                <td>Краткое описание</td>
+                <td>Описание</td>
+                <td>Цвета</td>
+                <td>Действия</td>
+            </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+
+    <!-- Форма добавления/редактирования товара -->
+    <div class="adding-product">
+        <form id="add-product-form">
+            <h1 id="form-title">Добавление товара:</h1>
+
+            <label for="input-img">Изображение</label>
+            <input id="input-img" type="file" accept="image/*">
+
+            <label for="input-name">Название товара</label>
+            <input id="input-name" type="text" placeholder="Введите название товара">
+
+            <label for="input-subtitle">Краткое описание</label>
+            <input id="input-subtitle" type="text" placeholder="Введите краткое описание">
+
+            <label for="input-descr">Полное описание</label>
+            <input id="input-descr" type="text" placeholder="Введите полное описание">
+
+            <label for="input-price">Цена</label>
+            <input id="input-price" type="number" placeholder="Введите цену">
+
+            <label for="input-quantity">Количество товара</label>
+            <input id="input-quantity" type="number" placeholder="Введите количество">
+
+            <label for="input-colors">Цвета (через запятую)</label>
+            <input id="input-colors" type="text" placeholder="Введите цвета через запятую">
+
+            <label for="input-category">Категория</label>
+            <select id="input-category">
+                <option value="">-- Выберите категорию --</option>
+            </select>
+
+            <button type="button" class="add-product">Добавить товар +</button>
+        </form>
+    </div>
+
+</main>
+
+<script src="/admin/js/products.js"></script>
+</body>
+</html>

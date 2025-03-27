@@ -1,0 +1,118 @@
+@import '/css/reset.css';
+@import '/admin/css/sidebar.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-table {
+    height: 80vh;
+    overflow-y: scroll;
+}
+table {
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    width: 100%;
+    overflow-y: hidden;
+    max-height: 80%;
+    border-collapse: collapse;
+    border: 2px solid #dadada;
+}
+thead {
+    background-color: #b5b5b5;
+}
+.td-delete {
+    color: #960000;
+    margin-top: 10px;
+}
+.td-delete span {
+    transform: rotate(45deg);
+}
+tr {
+    height: 60px;
+}
+td {
+    border: 2px solid #dadada;
+    padding: 15px;
+}
+img {
+    width: 100%;
+}
+.add-product {
+    width: 280px;
+    line-height: 60px;
+    border-radius: 20px;
+    background-color: rgb(0, 56, 135);
+    margin-top: 20px;
+}
+td a {
+    color: #000;
+    font-weight: 700;
+}
+td a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        display: flex;
+        height: auto;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sidebar_menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .scroll-table {
+        overflow: scroll;
+        width: 100vw;
+    }
+    .scroll-table img {
+        min-width: 150px;
+        height: 150px;
+    }
+}
+
+/* =============================== */
+
+.adding-product {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    gap: 30px;
+}
+.adding-product input {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.adding-product h1 {
+    font-size: 32px;
+}
+select {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}

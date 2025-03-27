@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Car.cz</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="dark-bg"></div>
+    <div class="authorization">
+        <button class="authorization__close-btn">+</button>
+        <div class="authorization-choice">
+            <div class="bg-effect"></div>
+            <button class="authorization-choice__btn sign-in active">Přihlasit se</button>
+            <button class="authorization-choice__btn sign-up">Registrace</button>
+        </div>
+        <div class="authorization-block"></div>
+    </div>
+    <main class="main">
+        <section class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <h1 class="banner__title">Vůně, které doplní interiér vašeho auta</h1>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__inner">
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/delivery.png">
+                        </div>
+                        <div class="benefits__item__title">Garance <br> doruceni</div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/gift.png">
+                        </div>
+                        <div class="benefits__item__title">Darek zdarma <br> <span>Dve vune v baleni</span></div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/dispensing location.png">
+                        </div>
+                        <div class="benefits__item__title">Pres 3000 vydejnich <br> mist po cele CR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__inner">
+                    <div class="catalog__categories">
+                        <button id="osvezovace" class="catalog__categories__btn active">Osvěžovače</button>
+                        <button id="naplne" class="catalog__categories__btn">Naplně</button>
+                        <button id="doplnky" class="catalog__categories__btn">Doplňky</button>
+                    </div>
+                </div>
+                <div class="catalog__block">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/authHeader.js"></script>
+    <script type="module" src="/js/search.js"></script>
+    <script
+            src="https://accounts.google.com/gsi/client"
+            async
+            defer
+            onload="window.googleScriptLoaded = true;">
+    </script>
+
+
+</body>
+</html>

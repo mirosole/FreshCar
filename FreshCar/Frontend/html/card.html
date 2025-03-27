@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Car.cz</title>
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="dark-bg"></div>
+    <div class="reviews-block">
+        <div class="reviews-block_header">
+            <h1>Hodnoceni</h1>
+            <button class="reviews-block_close-btn">+</button>
+        </div>
+        <div class="reviews-block_total-info">
+            <p>Hodnoceni (ks)</p>
+            <div class="reviews-block_total-info_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="reviews-block_inner">
+            <div class="reviews-block_item">
+                <div class="reviews-block_item_header">
+                    <h1 class="reviews-block_item_name">Jmeno</h1>
+                    <p class="reviews-block_item_date">02.03.2025</p>
+                </div>
+                <div class="reviews-block_item_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="reviews-block_item_text">
+                    Skvělý osvěžovač vzduchu do auta! Má příjemnou a dlouhotrvající vůni, která v autě vytvoří svěží atmosféru. Snadno se používá a vydrží dlouho. Určitě doporučuji!
+                </div>
+            </div>
+            <div class="reviews-block_item">
+                <div class="reviews-block_item_header">
+                    <h1 class="reviews-block_item_name">Jmeno</h1>
+                    <p class="reviews-block_item_date">02.03.2025</p>
+                </div>
+                <div class="reviews-block_item_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="reviews-block_item_text">
+                    Skvělý osvěžovač vzduchu do auta! Má příjemnou a dlouhotrvající vůni, která v autě vytvoří svěží atmosféru. Snadno se používá a vydrží dlouho. Určitě doporučuji!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="authorization">
+        <button class="authorization__close-btn">+</button>
+        <div class="authorization-choice">
+            <div class="bg-effect"></div>
+            <button class="authorization-choice__btn sign-in active">Přihlasit se</button>
+            <button class="authorization-choice__btn sign-up">Registrace</button>
+        </div>
+        <div class="authorization-block"></div>
+    </div>
+    <main class="main">
+        <section class="product">
+            <div class="container">
+                <div class="product__inner"></div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__inner">
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/delivery.png">
+                        </div>
+                        <div class="benefits__item__title">Garance <br> doruceni</div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/gift.png">
+                        </div>
+                        <div class="benefits__item__title">Darek zdarma <br> <span>Dve vune v baleni</span></div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <div class="benefits__item__img">
+                            <img src="/img/dispensing location.png">
+                        </div>
+                        <div class="benefits__item__title">Pres 3000 vydejnich <br> mist po cele CR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="suggestions">
+            <div class="container">
+                <div class="suggestions__inner">
+                    <div class="suggestions__commentars">
+                        <h1 class="suggestions__commentars__title">Ohodnoťte prosím produkt, abyste pomohli ostatním kupujícím s výběrem.</h1>
+                        <div class="suggestions__commentars__stars">
+                            <i id="star1" data-num="1" class="fa-regular fa-star"></i>
+                            <i id="star2" data-num="2" class="fa-regular fa-star"></i>
+                            <i id="star3" data-num="3" class="fa-regular fa-star"></i>
+                            <i id="star4" data-num="4" class="fa-regular fa-star"></i>
+                            <i id="star5" data-num="5" class="fa-regular fa-star"></i>
+                        </div>
+                        <input type="text" placeholder="Jmeno" class="suggestions__commentars__name">
+                        <input placeholder="Email" type="email" class="suggestions__commentars__email">
+                        <textarea class="suggestions__commentars__text" placeholder=""></textarea>
+                        <p class="suggestions__commentars__agreement">Vložením komentáře souhlasíte s <a href="#">podmínkami ochrany osobních údajů</a></p>
+                        <button class="suggestions__commentars__btn">Odeslat komentář</button>
+                    </div>
+    
+                    <div class="suggestions__offers">
+                        <h1>Také by vás mohlo zajímat:</h1>
+                        <div class="suggestions__offers__block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script type="module" src="/js/card.js"></script>
+</body>
+</html>
