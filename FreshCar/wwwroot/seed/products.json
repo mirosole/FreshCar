@@ -1,0 +1,213 @@
+[
+    {
+        "id": 1,
+        "name": "Bear Pilot",
+        "price": 399,
+        "img": "bear-pilot.png",
+        "subtitle": "Originální osvěžovač vzduchu s designem \"Bear Pilot\". Provoň svůj vůz s tímto stylovým vzhledem!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 6,
+        "options": {
+            "colors": {
+                "black": "black",
+                "pink": "pink",
+                "white": "white"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Black Husky",
+        "price": 399,
+        "img": "black-husky.png",
+        "subtitle": "Jeden z favoritů z naší nabídky tentokrát v černém provedení!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 0,
+        "options": {
+            "colors": {
+                "green": "green",
+                "pink": "pink",
+                "red": "red"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Buldog",
+        "price": 399,
+        "img": "buldog.png",
+        "subtitle": "Psí parťák na cesty v designu \"Buldog\" pro milovníky menších psů!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 6,
+        "options": {
+            "colors": {
+                "black": "black",
+                "pink": "pink",
+                "white": "white"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "Cat Pilot",
+        "price": 399,
+        "img": "cat-pilot.png",
+        "subtitle": "Novinka pro milovníky koček - Cat Pilot! I pro řidiče, kteří jsou spíše na kočičí říši, zde máme jejich zástupce v podobě roztomilého kocoura!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 6
+    },
+    {
+        "id": 5,
+        "name": "Duck Pilot",
+        "price": 399,
+        "img": "duck-pilot.png",
+        "subtitle": "Žlutá kachna, která provoní interiér vašeho vozu a oživí díky výrazné žluté barvě!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 2
+    },
+    {
+        "id": 6,
+        "name": "Husky",
+        "price": 399,
+        "img": "husky.png",
+        "subtitle": "Pro milovníky psů zde máme osvěžovač \"Husky\", kterého v autě musí mít každý správný pejskař!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 6
+    },
+    {
+        "id": 7,
+        "name": "Pink Kittie",
+        "price": 399,
+        "img": "pink-kitty.png",
+        "subtitle": "Oblíbený osvěžovač pro slečny v podobě Pink Kitte, který je jedním z nejroztomilejších provedení pro každé holčičí auto!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 2
+    },
+    {
+        "id": 8,
+        "name": "Spider-man",
+        "price": 399,
+        "img": "spider-man.png",
+        "subtitle": "Pro milovníky Marvelovek zde máme design Spider-man, který ocení každý správný milovník komiksových superhrdinů!",
+        "descr": "Balení obsahuje osvěžovač vzduchu a dvě vůně, které se v osvěžovači mění odejmutím magnetického krytu.",
+        "category": "Osvěžovače",
+        "quantity": 5
+    },
+    {
+        "id": 9,
+        "name": "Náplň Ocean",
+        "price": 49,
+        "img": "ocean.png",
+        "subtitle": "Svěží vůně \"Ocean\" která provoní váš inteirér vozu lehkým vánkem svěžesti.",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 6
+    },
+    {
+        "id": 10,
+        "name": "Náplň Cologne",
+        "price": 49,
+        "img": "cologne.png",
+        "subtitle": "Náplň do pilotů s vůní pánské kolínské pro provonění interiéru vašeho vozu.",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 6
+    },
+    {
+        "id": 11,
+        "name": "Náplň Jasmín",
+        "price": 49,
+        "img": "jasmine.png",
+        "subtitle": "Uklidňující vůně jasmínu, která vám zařídí pohodu při cestování.",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 6
+    },
+    {
+        "id": 11,
+        "name": "Náplň Lemon",
+        "price": 49,
+        "img": "lemon.png",
+        "subtitle": "Vůně citrusových plodů, která provoní váš interiér vozu.",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 4
+    },
+    {
+        "id": 12,
+        "name": "Náplň Levandule",
+        "price": 49,
+        "img": "levandule.png",
+        "subtitle": "Jedna z nejoblíbenějších květinových vůní, která vám provoní interiér vozu.",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 6
+    },
+    {
+        "id": 13,
+        "name": "Náplň Vonokvětka",
+        "price": 49,
+        "img": "vonokvetka.png",
+        "subtitle": "Vonokvětka neboli Osmanthus je čínská rostlina z Himalájí, která vám netradičně ovoní váš vůz",
+        "descr": "Náhradní náplň, kterou lze dokoupit po té, co již doslouží dvě přibalené náplně u každého pilota.",
+        "category": "Náplně",
+        "quantity": 6
+    },
+    {
+        "id": 14,
+        "name": "Popelníček",
+        "price": 169,
+        "img": "popelnicek.png",
+        "subtitle": "Pro mechaniky, kteří jsou vášnivý kuřáci, máme ten správný popelník, který vám nesmí v garáži nebo na dílně chybět!",
+        "descr": "Průměr 9cm, výška 4cm, materiál: Pryskyřice",
+        "category": "Doplňky",
+        "quantity": 6
+    },
+    {
+        "id": 15,
+        "name": "Přívěšek na klíče Píst",
+        "price": 69,
+        "img": "valec.png",
+        "subtitle": "Přívěšek na klíče ve stylu pístu motoru.",
+        "descr": "Materiál je ze slitiny zinku",
+        "category": "Doplňky",
+        "quantity": 6
+    },
+    {
+        "id": 16,
+        "name": "Přívěšek na klíče Wheel",
+        "price": 119,
+        "img": "valec.png",
+        "subtitle": "Stylový přívěšek na klíče \"Wheel\", který musí mít každý správný autíčkář! Kvalitní zinkové zpracování včetně brzdového kotouče a třmene!",
+        "descr": "Přívěšek je ze slitiny zinku včetně pohyblivého brzdového třmenu. Průměr přívěšku je 3,5 cm",
+        "category": "Doplňky",
+        "quantity": 6
+    },
+    {
+        "id": 17,
+        "name": "Stojan na propisky - motorový blok",
+        "price": 119,
+        "img": "motorovyblock.png",
+        "subtitle": "Originální stojan na propisky a vizitky, který by neměl chybět na žádném pracovním stole správného autíčkáře!",
+        "descr": "Stabilní robustní stojan s váhou 450 gramů a rozměry 12x11x8cm vyrobený z pryskyřice",
+        "category": "Doplňky",
+        "quantity": 4
+    },
+    {
+        "id": 18,
+        "name": "Stojan na propisky - pneumatiky",
+        "price": 169,
+        "img": "stojan-na-propisky.png",
+        "subtitle": "Stojan na propisky s motivem pneumatik, vhodná pozornost pro správného autíčkáře.",
+        "descr": "Výška 9cm, průměr 8,5cm.",
+        "category": "Doplňky",
+        "quantity": 6
+    }
+]

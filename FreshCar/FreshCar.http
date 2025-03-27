@@ -1,0 +1,6 @@
+@FreshCar_HostAddress = http://localhost:5064
+
+GET {{FreshCar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
